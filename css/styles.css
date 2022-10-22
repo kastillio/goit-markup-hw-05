@@ -170,18 +170,17 @@ img {
   margin-bottom: 30px;
   margin-right: 0px;
   background: #f5f4fa;
-  fill: #2196f3;
 }
 .detail-image {
   display: flex;
   width: 70px;
   height: 70px;
   border-radius: 4px;
+
 }
 
-.detail-image:focus {
-  background-color: #2196f3;
-  fill: #ffffff;
+.icon-blu{
+  fill:#2196f3;
 }
 .section-foto {
   padding-bottom: 94px;
