@@ -10,7 +10,8 @@ p {
   list-style: none;
   margin-bottom: 0px;
   margin-top: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 img {
   display: block;
@@ -79,13 +80,30 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+.link-st-port-cont::after {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+  content: "";
+  width: 100%;
+  border-radius: 4px;
+  border-bottom: 4px solid #2196f3;
+}
+.link-st-port-cont:hover::after {
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .link-st-port-cont:hover,
 :focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +149,8 @@ img {
 .link-mail-tel:hover,
 .link-mail-tel:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .main-page {} */
@@ -176,17 +196,80 @@ img {
   width: 70px;
   height: 70px;
   border-radius: 4px;
-
 }
 
-.icon-blu{
-  fill:#2196f3;
+.icon-blu {
+  fill: #2196f3;
 }
 .section-foto {
   padding-bottom: 94px;
   background-color: #ffffff;
 }
+.li-section {
+  position: relative;
+}
 
+.text-section::after{
+  display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    content: "Дизайнерські рішення";
+    width: 370px;
+    height: 70px;
+    bottom: 0px;
+    z-index: 1;
+    background-color: rgba(47, 48, 58, 0.8);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+
+}
+.fon-section::after {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  content: "Десктопні додатки";
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+  z-index: 1;
+  background-color: rgba(47, 48, 58, 0.8);
+font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+.fon-section2::after {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  content: "Мобільні додатки";
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+  z-index: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
 .section-comand {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -339,6 +422,8 @@ img {
 .link-mail-tel-foot:hover,
 .link-mail-tel-foot:focus {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress {
   margin-bottom: 0px;
@@ -368,6 +453,8 @@ img {
 }
 .address:hover {
   color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* .ul-link3 {} */
 
@@ -395,11 +482,20 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.li-foto-link:hover .div-foto,
-.li-foto-link:focus .div-foto {
+.li-foto-link{
+  display: block;
+  text-decoration: none;
+
+}
+.li-foto-link:hover,
+.li-foto-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .namefoto {
@@ -460,10 +556,14 @@ img {
 .social:hover,
 .social:focus {
   background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social:hover .comand-image,
 .social:focus .comand-image {
- fill: #ffffff;
+  fill: #ffffff;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .klient {
   display: flex;
@@ -486,15 +586,20 @@ img {
   align-items: center;
   gap: 30px;
 }
- 
+
 .ul-klient:hover,
 .ul-klient:focus {
   border: 1px solid #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #2196f3;
 }
 
 .ul-klient:hover .klient-image,
 .ul-klient:focus .klient-image {
   fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .klient-image {
   display: flex;
@@ -540,6 +645,8 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-portfolio {
@@ -587,4 +694,6 @@ img {
 .li-footer-social:hover,
 .li-footer-social:focus {
   background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
