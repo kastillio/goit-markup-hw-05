@@ -287,6 +287,7 @@ img {
   padding: 8px 30px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .ul-link-detail {
@@ -481,8 +482,7 @@ img {
 .li-foto-link {
   display: block;
   text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-foto-link:hover,
@@ -522,7 +522,7 @@ img {
   color: #ffffff;
   opacity: 0;
   transform: translatey(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .namefoto {
@@ -636,8 +636,8 @@ img {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .text-klient {
@@ -733,11 +733,15 @@ img {
   background-color: #0000001a;
   border: 1px solid #0000001a;
   z-index: 5;
+  visibility: visible;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -755,6 +759,7 @@ img {
 }
 .btn-modal {
   position: absolute;
+  cursor: pointer;
   width: 30px;
   height: 30px;
   right: 8px;
